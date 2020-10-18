@@ -18,17 +18,13 @@ export class GetFieldComponent implements OnInit {
   gettingValue = false;
   constructor(private getFieldVal: GetFieldService) { }
   ngOnInit(): void {
-    
     setTimeout(() => {
-      
       this.getFieldValues();
       this.gettingValue = true;
-      
     }, 1000);
   }
   getFieldValues() {
     this.getFieldVal.getData().subscribe(data => {
-      
       this.field1 = data.field1;
       this.field2 = data.field2
       this.field3 = data.field3;
@@ -36,7 +32,6 @@ export class GetFieldComponent implements OnInit {
       this.field5 = data.field5;
       this.field6 = data.field6;
       this.field7 = data.field7;
-  
     }
     );
   }

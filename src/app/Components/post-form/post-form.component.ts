@@ -51,9 +51,8 @@ export class PostFormComponent implements OnInit {
       Field24: this.field24,
       Field25: this.field25
     }
-
-    this.postForm.postData(this.formModel).subscribe(data => 
+    this.postForm.postData(this.formModel).subscribe(data =>
       alert("Data Submitted")
-      )
+    )
   }
 }
